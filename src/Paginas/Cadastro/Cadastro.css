@@ -1,0 +1,69 @@
+#container_cadastro{
+    height: 97.5vh;
+    background-color: rgb(255, 206, 44);
+}
+
+.register_card{
+    background-color: #fffcea;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 30rem;
+    border: 2px solid rgba(0, 0, 0, 0.527);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    text-align: center;
+    z-index: 1;
+}
+
+.register_card input{
+    text-align: center;
+    border: 2px solid rgb(255, 206, 44);
+    border-radius: 0.5rem;
+    width: 20rem;
+}
+
+.register_card input:hover{
+    transform: scale(1.1);
+    border-radius: 0.7rem;
+}
+
+.register_card button{
+    margin-top: 1rem;
+    font-weight: 1000;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(255, 196, 0);
+    color: #fff;
+    padding: 5px;
+    padding-inline: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register_card button:hover{
+    transform: scale(1.2);
+    background-color: rgb(255, 174, 0);
+    border-radius: 10px;
+}
+
+.register_card:hover{
+    transform: scale(1.02);
+    border-radius: 2rem;
+}
+
+.triangle_cadastro{
+    z-index: 0;
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    width: 0; 
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 1000px solid transparent;
+    border-top: 500px solid rgb(255, 187, 0);
+}

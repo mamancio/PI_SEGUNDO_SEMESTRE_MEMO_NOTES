@@ -1,0 +1,369 @@
+/* *{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.container {
+    z-index: 0;
+    display: flex;
+    align-items: center; 
+    height: 100vh; 
+    justify-content: space-around;
+}
+  
+.texto {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.note_img {
+    width: 25vw;
+    max-width: 100%;
+    height: auto;
+    animation: rotate 5s infinite ease-in-out;
+    z-index: -1;
+}
+   
+#inicio_container h1{
+    font-size: 4rem;
+}
+
+#inicio_container h3{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#inicio_container h5{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.create_note_btn{
+    font-weight: 1000;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(255, 196, 0);
+    color: #fff;
+    padding: 5px;
+    margin-top: 1.5rem;
+    padding-inline: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.create_note_btn:hover{
+    transform: scale(1.2);
+    background-color: rgb(255, 206, 44);
+    border-radius: 1rem;
+}
+
+.img_apresentacao{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.img_apresentacao img{
+    width: 10vw;
+}
+
+.card {
+    background-color: #f7f4e6;
+    border-radius: 10px; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    max-width: 300px;
+    margin: 20px; 
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+.card_title {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0 0 10px; 
+}
+
+.card h6{
+    font-size: 1rem;
+}
+
+.container img{
+    z-index: -2;
+}
+
+#container_apresentacao{
+    text-align: center ;
+} */
+
+
+
+
+* {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.container {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens se ajustem nas telas menores */
+}
+  
+.texto {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.note_img {
+    width: 25vw;
+    max-width: 100%;
+    height: auto;
+    animation: rotate 5s infinite ease-in-out;
+    z-index: -1;
+}
+
+#inicio_container h1 {
+    font-size: 4rem;
+}
+
+#inicio_container h3 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#inicio_container h5 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.create_note_btn {
+    font-weight: 1000;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(255, 196, 0);
+    color: #fff;
+    padding: 5px;
+    margin-top: 1.5rem;
+    padding-inline: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.create_note_btn:hover {
+    transform: scale(1.2);
+    background-color: rgb(255, 206, 44);
+    border-radius: 1rem;
+}
+
+.img_apresentacao {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.img_apresentacao img {
+    width: 10vw;
+}
+
+.card {
+    background-color: #f7f4e6;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    margin: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+.card_title {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.card h6 {
+    font-size: 1rem;
+}
+
+.container img {
+    z-index: -2;
+}
+
+#container_apresentacao {
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #inicio_container h1 {
+        font-size: 2.5rem;
+    }
+
+    #inicio_container h3 {
+        font-size: 1.5rem;
+    }
+
+    #inicio_container h5 {
+        font-size: 1.2rem;
+    }
+
+    .create_note_btn {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .img_apresentacao img {
+        width: 15vw;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .note_img {
+        width: 50vw;
+    }
+
+    /* Responsividade para os cards */
+    .img_apresentacao {
+        display: flex;
+        flex-direction: column; /* Organiza os cards em coluna */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%; /* Garante que os cards não ocupem toda a largura da tela */
+        margin: 10px 0; /* Ajusta o espaçamento vertical */
+    }
+
+    .card_title {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .card h6 {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    #inicio_container h1 {
+        font-size: 2rem;
+    }
+
+    #inicio_container h3 {
+        font-size: 1.2rem;
+    }
+
+    #inicio_container h5 {
+        font-size: 1rem;
+    }
+
+    .create_note_btn {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .img_apresentacao img {
+        width: 20vw;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note_img {
+        width: 70vw;
+    }
+
+    /* Ajustes adicionais para telas muito pequenas */
+    .img_apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 95%; /* Faz com que os cards ocupem mais espaço em telas muito pequenas */
+        margin: 8px 0; /* Ajuste o espaçamento para telas pequenas */
+    }
+
+    .card_title {
+        font-size: 1.2rem; /* Ajusta o título para telas pequenas */
+    }
+
+    .card h6 {
+        font-size: 0.9rem; /* Ajusta o texto para telas pequenas */
+    }
+}
